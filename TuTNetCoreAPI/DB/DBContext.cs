@@ -7,15 +7,16 @@ using TuTNetCoreAPI.Models;
 
 namespace TuTNetCoreAPI.DB
 {
-    public class UserContext: DbContext
+    public class DBContext: DbContext
     {
 
-        public UserContext(DbContextOptions<UserContext> options)
+        public DBContext(DbContextOptions<DBContext> options)
             : base(options)
         {
         }
 
         public DbSet<User> User { get; set; }
+        public DbSet<Drug> Drug { get; set; }
 
     }
 }

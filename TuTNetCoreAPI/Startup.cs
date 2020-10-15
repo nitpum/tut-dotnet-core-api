@@ -29,7 +29,7 @@ namespace TuTNetCoreAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<UserContext>(opt =>
+            services.AddDbContext<DBContext>(opt =>
                opt.UseInMemoryDatabase("User"));
             services.AddControllers();
         }

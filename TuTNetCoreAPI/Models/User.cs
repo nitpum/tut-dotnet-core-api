@@ -5,6 +5,13 @@ using System.Threading.Tasks;
 
 namespace TuTNetCoreAPI.Models
 {
+
+    public enum Gender
+    {
+        Male,
+        Female
+
+    }
     public class User
     {
 
@@ -14,5 +21,6 @@ namespace TuTNetCoreAPI.Models
 
         public string LastName { get; set; }
 
+        public Gender Gender;
     }
 }
